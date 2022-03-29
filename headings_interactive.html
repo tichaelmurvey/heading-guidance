@@ -47,7 +47,7 @@
 		<p>How would you fix this heading structure? Try on <a target="_blank" href="https://codepen.io/tichaelmurvey/pen/yLpXyKr">this CodePen (opens in new tab)</a>, then compare your solution to the one below.</p>
 		<button id="show-solution-q1" onclick="showSolution('q1')" aria-expanded="false">Show solution</button>
 		<div class="solution" id="solution-q1">
-		<p>The content on the right is not described by either heading.</p>
+		<p>The content on the right is not accurately described by either heading.</p>
 		<p>Some users will assume the content is associated with the heading "Convicts" as it is closest to the top of the section. Others will assume it is related to the heading "Remaining structures", as it is the nearest heading in the linear flow of text.</p>
 		<p>In both cases, users are making an assumption about your content which you didn't intend.</p>
 		<p>With the exception of interactive elements like navigation menus, and consistent page elements like footers, all content should be clearly associated with a heading.</p>
@@ -87,14 +87,14 @@
 	<h2 id="use-robust-heading-structure">Use a robust heading structure</h2>
 	<p>Your headings should follow design conventions and accessibility principles. If you follow this advice, your headings will be useful to all users in all contexts.</p>
 		<h3 id="h1-at-top">Use one H1 at the top of the page</h3>
-			<p>The H1 tag describes the main content of the page. It tells users what the page is about.</p>
+			<p>The level 1 heading (H1) tag describes the main content of the page. It tells users what the page is about.</p>
 			<p>If there is more than one H1 tag, users will be confused about which describes the purpose of the page.</p>
 			<p>The H1 should always be at the start of the page's main content. It should be the first element after navigation. If important content comes before the H1, it will be unclear to users whether the H1 describes that content.</p>
 			<p>As a rough guide, the only elements above the H1 should be those which are consistent across the entire site.</p>
 
 		<h3 id="heading-levels-create-subsections">Heading levels create a layered hierarchy</h3>
 			<p>A heading describes the content that comes after it, until the next heading of the same level.</p>
-			<p>For example, an H2 describes all the content after it and before the next H2.</p>
+			<p>For example, a level 2 heading (H2) describes all the content after it and before the next H2.</p>
 			<p>In the example below, which content is described by the heading "Environment?</p>
 
 		<section class="maria-example bad">
@@ -145,7 +145,7 @@
 		</div>
 		<div class="segment color blue">
 		<h3 id="dont-skip-heading-levels">Don't skip heading levels</h3>
-			<p>All users, but especially users of assistive technology, expect headings to flow from H1 to H2 to H3 etc. If content skips a heading level, it can be confusing. Users may think they missed a heading level somewhere.</p>
+			<p>All users, especially users of assistive technology, expect headings to flow from H1 to H2 to H3 etc. If content skips a heading level, it can be confusing. Users may think they missed a heading level.</p>
 			<p>Can you notice the problem with this example?</p>
 			<section class="maria-example bad">
 				<h2>History</h2>
@@ -160,15 +160,15 @@
 				<p>Maria Island has been identified by BirdLife International as an Important Bird Area (IBA) because it supports significant numbers of endangered swift parrots and forty-spotted pardalotes, over 1% of the world population of Pacific gulls, as well as populations of most of Tasmania's endemic bird species.</p>
 			</section>
 			<p>In this example, the level 4 heading "Birds" directly follows the level 2 heading "Environment".</p>
-			<p>This increases cognitive load on all users, who will naturally expect a level 3 heading to follow the H2. Screen reader users may believe a heading has been marked up incorrectly or they somehow missed some content.</p>
+			<p>This increases cognitive load on all users, who will naturally expect a level 3 heading to follow the H2. Screen reader users may believe a heading has been marked up incorrectly, or spend time looking for a heading which isn't there.</p>
 		</div>
 		<div class="segment">
 		<h3 id="keep-hierarchy-shallow">Keep the hierarchy shallow if possible</h3>
 			<p>Try to keep heading hierarchies to between 2 and 4 levels.</p>
-			<p>Headings help users navigate the site, and are a big improvement on a wall of text. However, a heading structure with many levels can become confusing. Users need to hold in their head several different descriptions of the content they are currently viewing.</p>
-			<p>More levels of heading often require headings to be styled with less visual clarity, in order to make each heading unique. This decreases the utility of headings.</p>
-			<p>Usually, any content which uses level 5 and 6 headings can be flattened to use only H4s without losing much meaning.</p>
-			<p>It's OK to have many headings of the same level one after another, as long as they are all related to the heading level above.</p>
+			<p>Headings help users navigate the site, and any headings are a big improvement on a wall of text. However, a heading structure with many levels can become confusing. Deep, complex heading structures ask users to hold multiple different descriptions and categoires of the content in their head.</p>
+			<p>More levels of heading often require headings means more heading styles. This means heading styles will be more similar, and harder to tell apart. This decreases the utility of headings.</p>
+			<p>Usually, any content which uses level 5 and 6 headings can be flattened to use only H1 to H4s without losing meaning.</p>
+			<p>In general, when in doubt use less heading levels instead of more. It's OK to have several headings of the same level one after another, as long as they are all related to the heading level above.</p>
 			<p>Read the example below. What do you think about the heading structure?</p>
 
 			<section class="maria-example bad">
@@ -200,8 +200,8 @@
 			<p>The level 6 heading <strong>Sightings</strong> is not needed. The content it contains is described well enough by the H5. The content under the heading is so short, the user doesn't save any time by checking the heading. Let's remove that and fold the content in above.</p>
 			<p>The final level 6 heading "Impact on penguins" is the most difficult to flatten. Here are two acceptable options:</p>
 			<ul>
-				<li>Remove the heading "Impact on penguins" and fold the content into the text above as a new paragraph.</li>
-				<li>Create a heading "Little penguins" at the same level as "Tasmanian devils". Rephrase the content slightly so it does not implicitly rely on the context of the "Tasmanian Devils" heading.</li>
+				<li>Remove the heading <strong>Impact on penguins</strong> and fold the content into the text above as a new paragraph.</li>
+				<li>Create a heading <strong>Little penguins</strong> at the same level as <strong>Tasmanian devils</strong>. Rephrase the content slightly so it does not implicitly rely on the context of the <strong>Tasmanian Devils</strong> heading.</li>
 			</ul>
 			<p>We'll go for the second here because it's more challenging.</p>
 
@@ -226,20 +226,25 @@
 			</div>
 			<div class="segment color blue">
 	<h2 id="styles-should-match-hierarchy">Heading styles should match heading hierarchy</h2>
-		<p>Heading tag levels show assistive technology users which headings describe which category. Heading styles should do the same for sighted users.</p>
+		<p>Most sighted users don't access heading tags, they rely on styles to show heading levels and create categories of content.</p>
+		<p>Heading styles need to clearly show the heading level.</p>
 		<h3 id="heading-size-should-scale">Heading size should scale with heading level</h3>
 			<p>The H1 should be the largest heading on the page. Headings should decrease in size as the user enters sub-heading levels. For sighted users who do not use assistive technology, this is how they know which headings categorise which content.</p>
 			<p>Some users can see the page, and use assistive technology to announce page content. If heading tag level and heading size are not consistent, these users will be confused.</p>
-						</div>
+		<h3 id="headings-should-be-distinct-than-text">Headings should be distinct from paragraph text</h3>
+		<p>Headings should always be obviously different from other text found on the site.</p>
+		<p>If headings are not distinguished from text, users may find it difficult to tell what is and isn't a heading.</p>
+		<p>This includes styled text. For example, a heading that is the same size as text, but has a higher font weight, is not suitable.</p>				
+		</div>
 
 						<div class="segment">
 
-		<h3 id="indents-accents-fonts">Indents, accents and fonts can also show heading level</h3>
-			<p>Size is the best way to communicate heading level. However, if sizes are too similar, there are other visual cues which can help users.</p>
+		<h3 id="indents-accents-fonts">Indents and accents can also show heading level</h3>
+			<p>Size is the best way to communicate heading level. However, there are other visual cues which can help users.</p>
 			<h4>Indenting</h4>
 			<p>You can indent content after each heading level, or after a certain heading level.</p>
 			<p>This creates more obvious content categories and shows when a new section is beginning.</p>
-			<p>Indenting every heading level can be overwhelming and is mainly used for highly technical documents where categorisation is critical.</p>
+			<p>Usually, use one level of indenting. Indenting every heading level can be difficult to understand and is mainly used for highly technical documents where categorisation is critical.</p>
 			<h4>Accents</h4>
 			<p>Text decoration can distinguish a certain level of heading. Colour, underlines, and visual decoration like a left border can make a heading level unique.</p>
 			<p>Here's an example using visual accents:</p>
