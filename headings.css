@@ -117,7 +117,7 @@ background-color: #bbe3b3;
 }
 
 
-.segment.color {
+.segment.orange {
 	color:  white;
 	margin-top:  60px;
 	padding-top:  1px;
@@ -134,11 +134,6 @@ background-color: #bbe3b3;
 
 .segment.orange {
 	background-color:  var(--orange);
-
-}
-
-.segment.blue {
-		background-color: var(--blue);
 }
 
 .top.segment{
